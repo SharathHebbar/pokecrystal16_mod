@@ -10,7 +10,7 @@
 *.exe
 
 # roms
-*.gbc
+# *.gbc
 *.gb
 
 # for any of the poor souls with save game files in their working directory
@@ -28,6 +28,7 @@
 # compare.sh
 baserom.txt
 pokecrystal.txt
+
 
 # for vim configuration
 # url: http://www.vim.org/scripts/script.php?script_id=441

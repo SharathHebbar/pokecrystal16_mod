@@ -183,3 +183,26 @@ To build **pokecrystal.gbc**:
 ```bash
 make
 ```
+
+If you are facing this issue in Windows make sure you download rgbasm 0.5.2 and then compile
+
+```plain-text
+rgbasm  -L -o audio.o audio.asm
+C:\cygwin64\bin\rgbasm.exe: unrecognized option: L
+Usage: rgbasm [-EVvw] [-b chars] [-D name[=value]] [-g chars] [-I path]
+              [-M depend_file] [-MG] [-MP] [-MT target_file] [-MQ target_file]
+              [-o out_file] [-P include_file] [-p pad_value] [-Q precision]
+              [-r depth] [-s features:state_file] [-W warning] [-X max_errors]
+              <file>
+Useful options:
+    -E, --export-all               export all labels
+    -M, --dependfile <path>        set the output dependency file
+    -o, --output <path>            set the output object file
+    -p, --pad-value <value>        set the value to use for `ds'
+    -s, --state <features>:<path>  set an output state file
+    -V, --version                  print RGBASM version and exit
+    -W, --warning <warning>        enable or disable warnings
+
+For help, use `man rgbasm' or go to https://rgbds.gbdev.io/docs/
+make: *** [Makefile:72: audio.o] Error 1
+```
